@@ -1,0 +1,92 @@
+*{
+    
+    padding: 0;
+}
+
+.float{
+    width: 100%;
+    height: 200px;
+}
+
+.float div {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    text-align: center;
+    float: left;
+    border: 1px solid #fff;
+}
+.float .div5{
+    float: right;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex .box{
+    flex: 1;
+    height: 150px;
+    background-color: blue;
+    margin: 1%;
+}
+
+.grid{
+    margin-top: 30px;
+    width: 100%;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 20% 10% 40% 10% auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.grid div{
+    background-color: #ff2243;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divA{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.divB{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row: 1/1;
+}
+
+.divC{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row: 1/1;
+}
+
+.divD{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row: 1/1;
+}
+
+.divE{
+    grid-column-start: 5;
+    grid-column-end: 15;
+    grid-row: 1/1;
+}
+
+.divF{
+    
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    
+}
